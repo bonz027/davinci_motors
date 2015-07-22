@@ -5,8 +5,13 @@ gem 'guard-bundler'
 gem 'guard-rspec'
 gem 'factory_girl_rails'
 
+group :test, :darwin, :development do
+  gem 'ruby_gntp'
+end
+
 group :test do
   gem 'capybara'
+  gem 'launchy'
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
