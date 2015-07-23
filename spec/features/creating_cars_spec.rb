@@ -13,7 +13,7 @@ feature 'Creating Cars' do
 
     click_button 'Create Car'
 
-    expect(page).to have_content( '1967 Ford Mustang has been created.')
+    expect(page).to have_content('1967 Ford Mustang has been created.')
 
     within("#cars") do
       expect(page).to have_content('1967')

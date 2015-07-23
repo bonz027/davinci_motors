@@ -12,14 +12,14 @@ class CarsController < ApplicationController
   def create
     @car = Car.new(car_params)
     @car.save
-    creation_message = "#{@car.year} #{@car.make} #{@car.model} has been created"
+    creation_message = "#{@car.year} #{@car.make} #{@car.model} has been created."
     redirect_to root_path,
       notice: creation_message
   end
 
   def update
     @car.update(car_params)
-    update_message = "#{@car.year} #{@car.make} #{@car.model} has been updated"
+    update_message = "#{@car.year} #{@car.make} #{@car.model} has been updated."
     redirect_to root_path,
       notice: update_message
   end
